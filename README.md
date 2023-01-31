@@ -29,19 +29,32 @@
 ## Getting Started
 
 ### Run for a development environment
+> **Warning** 
+> This version does not include `nginx` redirectión.<br>Server will be available in: `localhost:3000`
 
 ```bash
 npm run dev
 ```
 
 ### Run for a production environment
+> **Warning** 
+> This version does not include `nginx` redirectión.<br>Server will be available in: `localhost:3000`
 
 ```bash
 npm run build
 npm run start
 ```
 
+### Run for a production environment with `pm2`
+> **Warning** 
+> This version does not include `nginx` redirectión.<br>Server will be available in: `localhost:3000`
+```bash
+pm2 start pm2-deploy.json
+```
+
 ### Compile for docker
+> **Note** 
+> This version includes `nginx` redirectión.<br>Server will be available in: `localhost:80`
 
 ```bash
 docker-compose up -d

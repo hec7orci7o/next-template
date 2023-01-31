@@ -7,9 +7,9 @@
     "npm": "8.15.0"
   },
   "scripts": {
+    "start": "next start",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
     "lint": "next lint --cache --fix",
     "prepare": "husky install"
   },

@@ -1,4 +1,4 @@
-# next-template [![Production CI](https://github.com/Hec7or-Uni/chess-frontend/actions/workflows/production.yml/badge.svg?branch=main)](https://github.com/Hec7or-Uni/chess-frontend/actions/workflows/production.yml)
+# next-template [![Production CI](https://github.com/hec7orci7o/next-template/actions/workflows/production.yml/badge.svg)](https://github.com/hec7orci7o/next-template/actions/workflows/production.yml)
 
 ![node](https://img.shields.io/badge/node-16.x-blue)
 ![npm](https://img.shields.io/badge/npm-8.15.0-blue)
@@ -28,9 +28,23 @@
 
 ## Getting Started
 
-Runs the developer server
+### Run for a development environment
+
 ```bash
 npm run dev
+```
+
+### Run for a production environment
+
+```bash
+npm run build
+npm run start
+```
+
+### Compile for docker
+
+```bash
+docker-compose up -d
 ```
 
 ## Learn More

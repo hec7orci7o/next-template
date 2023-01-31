@@ -45,7 +45,7 @@ npm run build
 npm run start
 ```
 
-### Run for a production environment with `pm2`
+### Run for a production environment with [`pm2`](https://pm2.keymetrics.io/)
 > **Warning** 
 > This version does not include `nginx` redirectión.<br>Server will be available in: `localhost:3000`
 ```bash

@@ -11,7 +11,6 @@
 
 ## Folder structure
 
-
 > **Note** 
 > **_document.js vs. _app.js -- [What is the difference?](https://github.com/vercel/next.js/discussions/39821)**
 
@@ -25,6 +24,7 @@
 - `pages`: pages accessible from the browser via `.../page`
 - `public`: Static content.
 - `styles`: Contains the styles of the application. Override or new styles in `tailwind.config.js`.
+- `nginx`: Contains the nginx server configuration.
 
 ## Getting Started
 

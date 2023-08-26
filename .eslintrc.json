@@ -2,41 +2,20 @@
     "env": {
         "browser": true,
         "es2021": true,
-        "node": true,
-        "cypress/globals": true
+        "node": true
     },
     "extends": [
-        "eslint:recommended",
-        "next",
+        "standard",
         "plugin:react/recommended",
-        "google"
+        "next/core-web-vitals"
     ],
-    "parser": "@babel/eslint-parser",
     "parserOptions": {
-        "requireConfigFile": false,
         "ecmaVersion": "latest",
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "babelOptions": {
-            "parserOpts": {
-                "plugins": [
-                    "jsx"
-                ]
-            }
-        }
+        "sourceType": "module"
     },
     "plugins": [
-        "react",
-        "cypress"
+        "react"
     ],
     "rules": {
-        "react/prop-types": "off",
-        "react/react-in-jsx-scope": "off",
-        "require-jsdoc": "off",
-        "valid-jsdoc": "warn",
-        "object-curly-spacing": "off",
-        "semi": "error"
     }
 }

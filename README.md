@@ -7,7 +7,6 @@
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
-![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)
 
 ## Folder structure
 
@@ -16,48 +15,35 @@
 
 - `_app.js`: Core of the application, everything is assembled from here at runtime.
 - `_document.js`: Where side effects are possible.
-- `components`: Contains the reusable layouts of the application.
 - `context`: Encapsulates a global state that can be accessed from anywhere in the application.
 - `hooks`: Encapsulates small pieces of code that represent a certain type of logic.
 - `lib`: Chaos property, stores here functionalities that do not have to do with the rest of the mentioned sections. 
-- `pages/api`: Endpoints for creating an api rest.
-- `pages`: pages accessible from the browser via `.../page`
 - `public`: Static content.
 - `styles`: Contains the styles of the application. Override or new styles in `tailwind.config.js`.
-- `nginx`: Contains the nginx server configuration.
 
 ## Getting Started
 
 ### Run for a development environment
-> **Warning** 
-> This version does not include `nginx` redirectión.<br>Server will be available in: `localhost:3000`
 
 ```bash
 npm run dev
 ```
 
 ### Run for a production environment
-> **Warning** 
-> This version does not include `nginx` redirectión.<br>Server will be available in: `localhost:3000`
 
 ```bash
 npm run build
 npm run start
 ```
 
-### Run for a production environment with [`pm2`](https://pm2.keymetrics.io/)
-> **Warning** 
-> This version does not include `nginx` redirectión.<br>Server will be available in: `localhost:3000`
+### Compile for docker
+
 ```bash
-pm2 start pm2-deploy.json
+docker build -t next-template:latest .
 ```
 
-### Compile for docker
-> **Note** 
-> This version includes `nginx` redirectión.<br>Server will be available in: `localhost:80`
-
 ```bash
-docker-compose up -d
+docker run -p 3000:3000 --env-file .env next-template:latest
 ```
 
 ## Learn More

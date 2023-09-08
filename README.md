@@ -23,6 +23,12 @@
 
 ## Getting Started
 
+### Install dependencies
+
+```bash
+npm run ci
+```
+
 ### Run for a development environment
 
 ```bash

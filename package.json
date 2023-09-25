@@ -1,19 +1,4 @@
 {
-  "name": "next-app-dir-with-pwa",
-  "version": "0.1.0",
-  "license": "MIT",
-  "private": true,
-  "engines": {
-    "node": "20.x",
-    "npm": "9.8.1"
-  },
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint --cache --fix",
-    "prepare": "husky install"
-  },
   "dependencies": {
     "next": "13.4.2",
     "next-pwa": "^5.6.0",
@@ -33,7 +18,22 @@
     "postcss": "^8.4.28",
     "tailwindcss": "^3.3.3"
   },
+  "engines": {
+    "node": "20.x",
+    "npm": "10.x"
+  },
+  "license": "MIT",
   "lint-staged": {
     "*.js": "eslint --cache --fix"
-  }
+  },
+  "name": "next-app-dir-with-pwa",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint --cache --fix",
+    "prepare": "husky install",
+    "start": "next start"
+  },
+  "version": "0.1.0"
 }

@@ -13,7 +13,7 @@ FROM node:alpine AS builder
 WORKDIR /next-template
 COPY . .
 COPY --from=deps /next-template/node_modules ./node_modules
-RUN npm install -g npm@9.8.1
+RUN npm install -g npm@latest
 RUN npm run build && npm ci --omit=dev --ignore-scripts 
 
 # Stage 3: Production image
